@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+*{ 
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+    }
+.body{
+        width: 100%;
+        margin: 50px;
+    }
+h2 {
+    text-align: center; /* Pour aligner le texte au centre */
+    margin-top: 20px; /* Pour ajouter un espacement depuis le haut de la page */
+    align-items: center;
+}
+
+/* Style pour la table */
+#multiplicationTable {
+    border-collapse: collapse;
+    width: 50%;
+    margin-left: 25%;
+}
+
+/* Style pour les cellules de données */
+#multiplicationTable td {
+    border: 1px solid #ddd;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Style pour les en-têtes de colonne */
+#multiplicationTable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+a img{
+    width: 50%;
+    margin-bottom: 60px;
+    margin-left: 380px;
+    margin-top: 50px;
+    border-radius: 35px;
+}
+nav ul {
+    margin-top: 15px;
+    list-style-type: none;
+    margin-left: 35%;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333; /* Couleur du texte */
+}
+
+nav ul li a:hover {
+    background-color: #b3d9ff; /* Couleur de fond au survol */
+    color: #fff; /* Changement de couleur de texte au survol */
+    border-radius: 5px;
+}
+
+/* Media query pour les écrans plus petits */
+        @media only screen and (max-width: 600px) {
+            body {
+                margin: 20px;
+                margin-left: 25%; /* Réduire la marge sur les côtés pour les écrans plus petits */
+            }
+            #multiplicationTable {
+                width: -50%;
+                margin-left: -20%;
+                border-collapse: collapse;
+            }
+            h2{
+                margin-left: -70px; /* Réinitialiser la marge pour les écrans plus petits */
+            }
+            a img{
+                width: 400px;
+                margin-left: -20%;
+
+        }
+        nav ul {
+                cursor: pointer;
+                list-style-type: none;
+                margin-left: -15%;
+                padding: 1%;
+                display: flex;
+            }
+
+    }
+</style>
+<body> 
+    <nav>
+        <ul>
+            <li><a href="https://bounsengbk.netlify.app/">Retour Portfolio</a></li>
+            <li><a href="https://bounsengbkclone-youtube.netlify.app/">Projet Clone Youtube</a></li>
+            <li><a href="https://todolist-bkfr.netlify.app">To Do list</a></li>
+        </ul>
+    </nav>  
+    <h2>Afficher table multiplication avec JS</h2>
+    <table id="multiplicationTable">
+        <thead>
+            <br>
+            <tr>
+                <th>&times;</th>
+                <!-- Entêtes de colonnes pour les multiples -->
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+                <th>9</th>
+                <th>10</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Lignes de produits de multiplication générées par JavaScript -->
+        </tbody>
+    </table>
+    
+    </table>
+    <br>
+    <h2>Code Javascript</h2>
+    <a href="/images/script.png">
+        <img src="/images/script.png" alt="script">
+    </a>
+</body>
+<script src="script.js"></script>
+</html>
